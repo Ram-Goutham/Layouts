@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-image: url(image7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position:center ;
+    height: 100vh;
+}
+.navbar{
+    height: 70px auto;
+    width: 100%;
+    background-color: rgba(150, 148, 148, 0.5);
+    position: fixed;
+
+}
+.navbar nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+} 
+.navbar nav .logo{
+    padding-left: 20px;
+}
+.navbar nav .logo a{
+    text-decoration: none;
+    color: rgba(230, 224, 224,0.8) ;
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.623),
+                -2px -2px 2px rgba(218, 213, 213, 0.623);
+           
+
+
+
+}
+.navbar nav .menu button{
+     margin: 14px 20px;
+     padding: 10px 16px;
+}
+
+.navbar nav .menu .signup{
+    background-color:rgba(255,255,255,0.5);
+    color: #000;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+
+}
+.navbar nav .menu .signup:focus{
+    outline: none;
+}
+.navbar nav .menu .signup a:hover{
+    
+    color: #fff;
+    transition:color 1s linear;
+} 
+
+.navbar nav .menu .signin{
+    background-color:rgba(255,255,255,0.5);
+    color: #000;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    
+}
+.navbar nav .menu .signin  a:hover{
+    
+    color: #fff;
+    transition:color 1s linear;
+    
+}
+.container{
+    position: relative;
+    width:80%;
+    margin: 0 auto;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+
+}
+.container .box{ 
+    width:50%;
+    margin: auto;
+    height: 300px auto;
+    
+   
+}
+.container .box fieldset{ 
+    background-color:rgba(255, 250, 250, 0.2);
+    border-radius:15px;
+    overflow: hidden;
+    border:none ;
+
+}
+.container .box fieldset legend{ 
+    background:linear-gradient(to bottom,transparent ,rgba(99, 99, 99, 0.664));
+    width:auto ;
+    padding: 0px 8px 5px 8px;
+    border-radius:11px ;
+    margin-left: 15px;
+    font-size: 1.4rem;
+    border: none;
+}
+.container .box fieldset .inbox{ 
+    width: 90%;
+    margin: 0 auto;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.container .box fieldset .inbox input{
+    border-radius:0px 5px ;
+    width:80%;
+    margin: 0 auto;
+    border:0.5px solid black;
+    height:20px ;
+    background-color: transparent;
+    color:rgb(57, 8, 235);
+    padding-left: 10px;
+
+} 
+.container .box fieldset .inbox input::placeholder{
+    color: rgba(73, 71, 71, 0.849);
+}
+.container .box fieldset .inbox .fname{
+    display:grid;
+    grid-template-columns:40% 70% ;
+}
+.container .box fieldset .inbox .lname{
+    display: grid;
+    grid-template-columns:40% 70% ;
+}
+.container .box fieldset .inbox .email{
+    display: grid;
+    grid-template-columns:40% 70% ;
+}
+.container .box fieldset .inbox .pwd{
+    display: grid;
+    grid-template-columns:40% 70% ;
+}
+.container .box fieldset .inbox .cnfrmpwd{
+    display: grid;
+    grid-template-columns:40% 70% ;
+}
+.container .box fieldset .inbox .chkbox{
+    display: grid;
+    grid-template-columns:45% 70% ;
+    
+}
+.container .box fieldset .inbox .submit{
+    margin-bottom: 5px;
+    float: right;
+    width:50% ;
+}
+#submit:hover{
+    color: rgb(248, 90, 16);
+    transition: ease-in-out 1s;
+    transform: scale(1.2);
+}

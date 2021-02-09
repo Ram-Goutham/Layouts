@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey_Document</title>
+</head>
+<body class="container">
+    <section class="nav_bar">
+        <nav>
+            <div class="nav_bar_box">
+                <div class="logo">
+                    <h2 id="survey">Survey_Report</h2>
+                </div>
+                <div class="about">
+                        <a href="#">Home</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="main">
+        <div class="heading">
+            <h2>Health Awareness Report</h2>
+        </div>
+        <div class="first">
+            <fieldset class="first_box">
+                <legend class="physical_data">
+                    Physical data
+                </legend>
+                Name<span style="color:red">*</span>:
+                <input type="text" name="name" placeholder="Enter your name here" required>
+                <br>
+                Age<span style="color:red">*</span>:
+                <input type="number" name="age" min="1" placeholder="Enter your age here" required>
+                <br>
+                Height<span style="color:red">*</span>:
+                <input type="number" name="height" min="1" placeholder="Enter your height(cms or feet) here" required>
+                <br>
+                Weight<span style="color:red">*</span>:
+                <input type="text" name="weight" placeholder="Enter your weight here" required>
+                <br>
+                Blood_Group:
+                <input type="text" name="blood_group" placeholder="Enter your blood group here">   
+            </fieldset>
+        </div>
+        <div class="second">
+            <fieldset class="second_box">
+                <legend class="details">
+                    Details
+                </legend>
+                Contact number<span style="color:red">*</span>:
+                <input type="text" name="contact_number" placeholder="Enter here" required>
+                <br>
+                Alternative number:
+                <input type="text" name="alternate_number" placeholder="Enter here" required>
+                <br>
+                Email<span style="color:red">*</span>:
+                <input type="email" name="email" placeholder="Enter here">
+                <br>
+                City<span style="color:red">*</span>:
+                <input type="text" name="city" placeholder="Enter here" >
+                <br>
+                State<span style="color:red">*</span>:
+                <input type="text" name="state" placeholder="Enter here" required>
+                <br>
+                Country<span style="color:red">*</span>:
+                <input type="text" name="country" placeholder="Enter here" required>   
+            </fieldset>
+        </div>
+        <div class="third">
+            <fieldset class="third_box">
+                <legend class="medical">
+                    Medical History
+                </legend>
+                No. of medical issues faced previously:
+                <select name="medical_option" id="medical_option">
+                    <option value="medical_option">1</option>
+                    <option value="medical_option">2</option>
+                    <option value="medical_option">3</option>
+                    <option value="medical_option">4</option>
+                    <option value="medical_option">5</option>
+                    <option value="medical_option">6</option>
+                    <option value="medical_option">7</option>
+                    <option value="medical_option">8</option>
+                    <option value="medical_option">9</option>
+                    <option value="medical_option">10</option>  
+                </select> 
+                <br>
+                Please issue here description of medical issues faced until now:
+                <br>
+                <textarea name="medical_description" id="medical_description" cols="70" rows="5 " placeholder="mention all the issues in seperate lines"></textarea>
+                <br>
+                Are you facing any medical issues presently:<span style="color:red">*</span> 
+                    Yes<input id="radio" type="radio" name="issues" checked>
+                    No<input id="radio" type="radio" name="issues">
+                <br>
+                If present, have you cured it: <span style="color:red">*</span>   
+                    Yes<input id="radio"  type="radio" name="cured" checked>
+                    No<input  id="radio" type="radio" name="cured">
+                <br>
+                Major medical issue faced/facing with:
+                <select name="facing_now" id="facing_now">
+                    <option value="">Brain</option>
+                    <option value="">Hair</option>
+                    <option value="">Skin</option>
+                    <option value="">Nerves</option>
+                    <option value="">Blood</option>
+                    <option value="">Muscles</option>
+                    <option value="">Bones</option>
+                    <option value="">Organs</option>
+                </select>
+                <br>
+                Major medical issue description: 
+                <br><textarea placeholder="mentionf in brief" name="major_description" id="major_description" cols="70" rows="2"></textarea>
+                <br>
+                Symptoms:
+                 <br>
+                <textarea name="symptoms" id="symptoms" cols="70" rows="4"></textarea>
+                <br>
+                Disease Name: <input type="text" name="disease_name" id="disease_name" placeholder="write your disease name here">
+                <br>
+                Hospital Name where you hospitalized: <input type="text" name="hospital_name" id="hospital_name" placeholder="write your hospital name here">
+                <br>
+                Hospital Address: <input type="text" name="hospital_address" id="hospital_address" placeholder="write your hospital address here">
+                <br>
+                Age when you faced the medical issue: <input type="number" min="1">
+            </fieldset>
+        </div>
+        <button  type="sumbit" value="Submit" name="submit">Submit</button>
+    </section>
+</body>
+</html>
