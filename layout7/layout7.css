@@ -1,0 +1,36 @@
+*{
+    margin: 0;padding: 0;
+    color: #5880B5;
+    font-family: sans-serif;
+}
+
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border:3px solid #5880B5;
+    border-radius:25px ;
+    width: 223px;
+    height: 120px;
+    line-height: 37px;
+    padding: 18px 7px;
+}
+.rupees{
+    float: right;
+    margin-right:65px ;
+    
+}
+h2{
+    font-family: Impact, Haettenschweiler, sans-serif;
+    font-weight: 200;
+}
+.date{
+    float: right;
+    font-size:17px;
+    letter-spacing: 1px;
+}
+.last{
+    font-weight:700;
+    font-size: 20px;
+}
