@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
     
 }
 body
@@ -13,7 +14,7 @@ body
 .container
 {
     border: 1px solid red;
-    height: 500px;
+    height: 600px;
     display: flex;
 }
 
@@ -22,9 +23,10 @@ body
     border: 1px dotted rgb(4, 255, 25);
     flex-basis: 60%;
     display: grid;
-    grid: repeat(5,1fr)/repeat(4,1fr);
+    grid: repeat(4,1fr)/repeat(4,1fr);
     grid-gap: 6px;
     padding: 10px;
+    
 }
 .second_column
 {
@@ -34,74 +36,54 @@ body
 }
 .a{
     border-radius: 6px;
+    overflow:hidden;
 }
-.a  > img{
+.a > img{
     width: 100%;
-    height: 100%;    
+    height: 100%;
+    object-fit:fill;
 }
 .one{
     border: 1px solid black;
-    grid-area:1/1/3/2;
+    grid-area:1/1/3/3;
+
 }
 .two{
     border: 1px solid black;
-    grid-area:1/2/2/3;
-    background-color: saddlebrown;
+    grid-area:1/3/2/4;
+   
 }
 .three{
     border: 1px solid black;
-    grid-area:1/3/2/4;
-    background-color: salmon;
+    grid-area:2/3/3/4;
+   
 }
 .four{
     border: 1px solid black;
     grid-area:1/4/3/5;
-    background-color: sandybrown;
+    
 }
 .five{
     border: 1px solid black;
-    grid-area:2/2/3/4;
-    background-color: seagreen;
+    grid-area:3/1/4/2;
+    
 }
 .six{
     border: 1px solid black;
-    grid-area:3/1/5/3;
-}
-.six{
-    width: 200px;
-    height: 100px;
+    grid-area:3/2/4/4;
 }
 .seven{
     border: 1px solid black;
-    grid-area:3/3/4/4;
-    background-color: sienna;
+    grid-area:4/1/5/3;
 }
 .eight{
     border: 1px solid black;
-    grid-area:3/4/4/5;
-    background-color:turquoise;
+    grid-area:4/3/5/4;
 }
 .nine{
     border: 1px solid black;
-    grid-area:4/3/5/4;
-    background-color: skyblue;
+    grid-area:3/4/5/5;
 }
-.ten{
-    border: 1px solid black;
-    grid-area:5/1/6/3;
-    background-color: slateblue;
-}
-.eleven{
-    border: 1px solid black;
-    grid-area:5/3/6/4;
-    background-color: slategrey;
-}
-.twelve{
-    border: 1px solid black;
-    grid-area:4/4/6/5;
-    background-color: tomato;
-}
-
 
 
 
