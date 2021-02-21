@@ -88,6 +88,7 @@ body
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-color: rgba(97, 229, 252, 0.678);
     background-blend-mode: luminosity;
     margin: 2%;
@@ -214,12 +215,85 @@ body
     height: 70%;
 }
 .parah{
-    font-size:300%;
+    width: 100%;
+    font-size:150%;
     color: white;
     font-weight: bold;
     font-family: 'Black Ops One', cursive;
     text-align: center;
-    align-self: center;
+    line-height: 3;
+}
+.outer_box{
+    width:96% ;
+    margin:0 2% ;
+    position: relative; 
+    z-index: 5;
+    height: auto;
+    text-align: center;
+    background-image: url(endimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 5px 5px 10px rgba(255, 255, 253, 0.822),
+                -5px -5px 10px rgb(5, 5, 5); 
+    border-radius:6px;
+    padding-bottom: 10px;
+}   
+.inner_box{
+    margin: 3%;
+}
+.checkout{
+    height: 40px;
+    background-color: rgba(46, 46, 53, 0.788);
+    border-radius: 6px 6px 0 0;
+    padding: 8px;
+    height:40px;
+    color: #fff;
+}
+span{
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.first_row,.second_row,.third_row,.fourth_row{
+    display: inline;
+}
+input,select{
+    width: 42%;
+    height:25px;
+    border-radius: 6px;
+    padding-left: 5px;
+    margin:2%;
+    background-color: rgba(44, 42, 42, 0.192);
+    color: white;
+}
+input::placeholder,textarea::placeholder{
+    color: white;
+}
+select{
+    border-width:2px ;
+    border-style: solid;
+    
+}
+.fifth_row input,.sixth_row,.seventh_row{
+    width:88%;
+    margin: auto;
+    margin-top: 2%;
+}
+.sixth_row textarea{
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(44, 42, 42, 0.192);
+
+}
+.seventh_row{
+    background-color: rgba(168, 168, 168, 0.555);;
+    height: 40px;
+    border-radius: 6px;
+    padding:8px;
+    color: #fff;
 }
 
 
